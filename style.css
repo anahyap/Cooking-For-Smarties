@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(to bottom, #c0e93b, #faf9e7);
+}
+
+nav {
+  background-color: black;
+}
+
+.logo {
+  display: block;     
+  margin: 20px auto;   
+  max-width: 200px;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;  
+  display: block;
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+/* Tablet media */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+/* Phone screen media */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
